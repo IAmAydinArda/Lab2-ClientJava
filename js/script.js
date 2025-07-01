@@ -31,14 +31,14 @@ let info = new Applicant(
 )
 
 document.getElementById("location").textContent = `Location: ${info.location}`;
-document.getElementById("role").textContent = `Target role: ${info.targetRole}`;
+document.getElementById("role").textContent = `Target role: ${info.role}`;
 document.getElementById("experience").textContent = `Years of Experience: ${info.experience}`;
 document.getElementById("education").textContent = `Education: ${info.education}`;
 document.getElementById("skills").textContent = `Skills: ${info.skills.join(", ")}`;
 document.getElementById("certifications").textContent = `Certifications: ${info.certifications.join(", ")}`;
 document.getElementById("languages").textContent = `Languages Spoken: ${info.languages.join(", ")}`;
-document.getElementById("portfolio").innerHTML = `Portfolio URL: <a href="${info.portfolio}" target="_blank">${aisha.portfolioURL}</a>`;
-document.getElementById("relocate").textContent = `Willing to Relocate ${info.willingToRelocate}`;
+document.getElementById("portfolio").innerHTML = `Portfolio URL: <a href=# target="_blank">${info.portfolio}</a>`;
+document.getElementById("relocate").textContent = `Willing to Relocate: ${info.relocate}`;
 document.getElementById("remote").textContent = `Remote Work Preferred: ${info.remote}`;
 document.getElementById("soft_skills").textContent = `Soft Skills: ${info.soft_skills.join(", ")}`;
 document.getElementById("internship").textContent = `Open to Internships: ${info.internship}`;
